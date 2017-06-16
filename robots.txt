@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow:
 
-Sitemap: http://ycangus2415.github.io/sitemap.xml 
+Sitemap: http://ycangus2415.github.io/sitemap.xml
