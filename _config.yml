@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://ycangus2415.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: AI Producer Dreamer
+subtitle: Process of Dreaming to be AI Producer
+author: Angus;Yang Chao
 simple_search: https://www.google.com/search
 description:
 
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: 740274089@qq.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
