@@ -4,7 +4,7 @@
   <title><![CDATA[AI Producer Dreamer]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-17T18:17:30+08:00</updated>
+  <updated>2017-06-17T18:23:41+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[Angus;Yang Chao]]></name>
@@ -35,11 +35,7 @@
 
 <p>需要mathjx支持，不知道能不能有用。</p>
 
-<p>$$</p>
-
 <script type="math/tex; mode=display">f(x) = \sin(x)\int_0^1\sum \cos(x)dx</script>
-
-<p>$$</p>
 
 <p>显然是没有用的。</p>
 
