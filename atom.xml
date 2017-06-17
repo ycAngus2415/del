@@ -4,7 +4,7 @@
   <title><![CDATA[AI Producer Dreamer]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-17T19:04:37+08:00</updated>
+  <updated>2017-06-17T19:27:51+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[Angus;Yang Chao]]></name>
@@ -42,11 +42,20 @@
 
 <script type="math/tex; mode=display">f(x) = \int^10_0\sin(x)dx</script>
 
-<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，会后悔的，加载特别慢。</p>
+<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。</p>
 
-<pre><code class="language-javascript">&lt;script type="text/x-mathjax-config"&gt;
+<pre><code class="language-Javascript">&lt;!-- mathjax config similar to math.stackexchange --&gt;
+&lt;script type="text/x-mathjax-config"&gt;
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
 });
 &lt;/script&gt;
 &lt;script type="text/javascript" async
@@ -54,7 +63,7 @@ MathJax.Hub.Config({
 &lt;/script&gt;
 </code></pre>
 
-<p>另外，在_config.yml中markdown的解释器换了后，要注意这时候的语法有一点不一样，就是公式中$$必须单独成行，代码块前后面也必须要有空行。</p>
+<p>另外，在_config.yml中markdown的解释器换了后，要注意这时候的语法有一点不一样，就是公式中$$ 必须单独成行，代码块前后面也必须要有空行。</p>
 
 <p>据说代码块也是有问题的，我要一起测试测试</p>
 
@@ -67,6 +76,8 @@ class g(nn.Module):
 </code></pre>
 
 <p>确实，好像没有高亮。</p>
+
+<p>原来是主题的原因，不过比较简洁，还是能够接受的，</p>
 ]]></content>
   </entry>
   
