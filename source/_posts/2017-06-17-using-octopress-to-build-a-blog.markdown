@@ -16,3 +16,12 @@ categories:
 # 更换octopress 主题，
 
 1. 先把source 中atom.xml 和robots.txt中的nil 改成null
+
+
+
+# 添加上公式
+
+需要mathjx支持，不知道能不能有用。
+
+$$f(x) = \sin(x)\int_0^1\sum \cos(x)dx$$
+
