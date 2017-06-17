@@ -9,7 +9,8 @@
   <meta name="author" content="Angus;Yang Chao">
 
   
-  <meta name="description" content="新建一个github.io 创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦 新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github. &hellip;">
+  <meta name="description" content="新建一个github.io 创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦
+新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github. &hellip;">
   
 
   <meta name="HandheldFriendly" content="True">
@@ -89,49 +90,62 @@
       <h1 class="entry-title">Using Octopress to Build a Blog</h1>
     </header>
   
-  <div class="entry-content"><h1 id="githubio">新建一个github.io</h1>
+  <div class="entry-content"><h1>新建一个github.io</h1>
 
 <ol>
-  <li>创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦</li>
-  <li>新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github.io 从客户端放到本地，一定要从octopress。</li>
+<li>创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦</li>
+<li>新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github.io 从客户端放到本地，一定要从octopress。</li>
 </ol>
 
-<h1 id="octopress-">更换octopress 主题，</h1>
+
+<h1>更换octopress 主题，</h1>
 
 <ol>
-  <li>先把source 中atom.xml 和robots.txt中的nil 改成null</li>
+<li>先把source 中atom.xml 和robots.txt中的nil 改成null</li>
 </ol>
 
-<h1 id="section">添加上公式</h1>
+
+<h1>添加上公式</h1>
 
 <p>需要mathjx支持，不知道能不能有用。</p>
 
-<script type="math/tex; mode=display">f(x) = \sin(x)\int_0^1\sum \cos(x)dx</script>
+<p>$$</p>
+
+<p>f(x) = \sin(x)\int_0<sup>1</sup>\sum \cos(x)dx</p>
+
+<p>$$</p>
 
 <p>显然是没有用的。</p>
 
 <p>但是添加了这样的代码后就可以了，主要原因是mathjac的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，会后悔的，加载特别慢。</p>
 
-<pre><code class="language-javascript">&lt;script type="text/x-mathjax-config"&gt;
+<p>~~~javascript</p>
+
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
-&lt;/script&gt;
-&lt;script type="text/javascript" async src="path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML"&gt;&lt;/script&gt;
+</script>
+
+
+<script type="text/javascript" async src="path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+
+<pre><code>
+
+
+另外，在_config.yml中markdown的解释器换了后，要注意这时候的语法有一点不一样，就是公式中$$必须单独成行，代码块前后面也必须要有空行。
+
+据说代码块也是有问题的，我要一起测试测试
 </code></pre>
 
-<p>另外，在_config.yml中markdown的解释器换了后，要注意这时候的语法有一点不一样，就是公式中$$必须单独成行，代码块前后面也必须要有空行。</p>
-
-<p>据说代码块也是有问题的，我要一起测试测试</p>
-
-<pre><code class="language-python">import torch
+<p>import torch
 import torch.nn
 class g(nn.Module):
-    def __init__(self):
-        super(g, self).__init__()
-        
-</code></pre>
+    def <strong>init</strong>(self):
+        super(g, self).<strong>init</strong>()</p>
 
+<p>~~~</p>
 </div>
   <footer>
     <div class="articlemeta">
@@ -179,22 +193,7 @@ class g(nn.Module):
 
 
     </div>
-    <footer role="contentinfo"><!-- mathjax config similar to math.stackexchange -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  jax: ["input/TeX", "output/HTML-CSS"],
-  tex2jax: {
-    inlineMath: [ ['$', '$'] ],
-    displayMath: [ ['$$', '$$']],
-    processEscapes: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-  },
-  messageStyle: "none",
-  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-});
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
-<div class="content">
+    <footer role="contentinfo"><div class="content">
   <p>
     Copyright &copy; 2017 Angus;Yang Chao
   </p>
@@ -230,6 +229,22 @@ MathJax.Hub.Config({
 <script src="/javascripts/libs/respond.js" type="text/javascript"></script>
 <script src="/javascripts/octopress.js" type="text/javascript"></script>
 
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script type="text/javascript" async src="path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
 
 </body>
 </html>
