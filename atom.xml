@@ -4,7 +4,7 @@
   <title><![CDATA[AI Producer Dreamer]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-17T00:31:37+08:00</updated>
+  <updated>2017-06-17T17:17:34+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[Angus;Yang Chao]]></name>
@@ -15,23 +15,25 @@
   
   <entry>
     <title type="html"><![CDATA[Using Octopress to Build a Blog]]></title>
-    <link href="http://ycangus2415.github.io/blog/2017/06/17/using-octopress-to-build-a-blog/"/>
+    <link href="http://ycangus2415.github.io/blog/20170617/using-octopress-to-build-a-blog/"/>
     <updated>2017-06-17T00:14:56+08:00</updated>
-    <id>http://ycangus2415.github.io/blog/2017/06/17/using-octopress-to-build-a-blog</id>
-    <content type="html"><![CDATA[<h1>新建一个github.io</h1>
+    <id>http://ycangus2415.github.io/blog/20170617/using-octopress-to-build-a-blog</id>
+    <content type="html"><![CDATA[<h1 id="githubio">新建一个github.io</h1>
 
 <ol>
-<li>创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦</li>
-<li>新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github.io 从客户端放到本地，一定要从octopress。</li>
+  <li>创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦</li>
+  <li>新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github.io 从客户端放到本地，一定要从octopress。</li>
 </ol>
 
-
-<h1>更换octopress 主题，</h1>
+<h1 id="octopress-">更换octopress 主题，</h1>
 
 <ol>
-<li>先把source 中atom.xml 和robots.txt中的nil 改成null</li>
+  <li>先把source 中atom.xml 和robots.txt中的nil 改成null</li>
 </ol>
 
+<h1 id="section">添加上公式</h1>
+
+<p>需要mathjx支持，不知道能不能有用。</p>
 ]]></content>
   </entry>
   
