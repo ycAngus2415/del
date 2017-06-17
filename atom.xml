@@ -4,7 +4,7 @@
   <title><![CDATA[AI Producer Dreamer]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-17T18:02:08+08:00</updated>
+  <updated>2017-06-17T18:09:59+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[Angus;Yang Chao]]></name>
@@ -38,6 +38,17 @@
 <script type="math/tex; mode=display">f(x) = \sin(x)\int_0^1\sum \cos(x)dx</script>
 
 <p>显然是没有用的。</p>
+
+<p>据说代码块也是有问题的，我要一起测试测试</p>
+
+<pre><code class="language-python">import torch
+import torch.nn
+class g(nn.Module):
+    def __init__(self):
+        super(g, self).__init__()
+        
+</code></pre>
+
 ]]></content>
   </entry>
   
