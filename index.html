@@ -117,6 +117,7 @@
 
 <script type="math/tex; mode=display">f(x) = \sin(x)\int_0^1\sum \cos(x)dx</script>
 
+<p>显然是没有用的。</p>
 </div>
       
       
@@ -170,21 +171,6 @@
 <script src="/javascripts/octopress.js" type="text/javascript"></script>
 
 
-<script type="text/javascript">
-$(document).ready(function(){
-  var userAgent = navigator.userAgent.toLowerCase();
-  var isiPhone = (userAgent.indexOf('iphone') != -1 || userAgent.indexOf('ipod') != -1) ? true : false;
-  var isAndroid = (userAgent.indexOf('android') != -1) ? true : false;
-  clickEvent = (isiPhone || isAndroid) ? 'touchstart' : 'click';
-  $('#sidebar').on(clickEvent, function() {
-    $(this).toggleClass('open');
-  });
-  $('.articlemeta').on(clickEvent, function() {
-    toggleDisqus();
-    $(this).toggleClass('open');
-  });
-});
-</script>
 <!-- mathjax config similar to math.stackexchange -->
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -200,7 +186,6 @@ MathJax.Hub.Config({
 });
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
-
 
 </body>
 </html>
