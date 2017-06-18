@@ -6,6 +6,9 @@ comments: true
 categories: 
 ---
 
+这篇文章参考了生命之氢
+
+[reference]: http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/ "生命之氢"
 [reference]: http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/ " reference from here"
 
 # 新建一个github.io
@@ -35,11 +38,11 @@ $$
 
 
 
-显然是没有用的。$\sin(x)$
+显然是没有用的。$$\sin(x)$$
 
 $$f(x) = \int^10_0\sin(x)dx$$
 
-但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，**会后悔的**，加载特别慢。
+但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，**会后悔的**，加载特别慢。另外，如果翻墙，公式加载也非常慢，直接访问网站会快很多。
 
 
 
