@@ -9,7 +9,7 @@
   <meta name="author" content="Angus;Yang Chao">
 
   
-  <meta name="description" content="新建一个github.io 创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦 新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github &hellip;">
+  <meta name="description" content="这篇文章参考了生命之氢 新建一个github.io 创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦 新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端， &hellip;">
   
 
   <meta name="HandheldFriendly" content="True">
@@ -90,7 +90,8 @@
       <h1 class="entry-title">Using Octopress to Build a Blog</h1>
     </header>
   
-  <div class="entry-content">
+  <div class="entry-content"><p>这篇文章参考了生命之氢</p>
+
 <h1 id="githubio">新建一个github.io</h1>
 
 <ol>
@@ -114,7 +115,7 @@
 
 <script type="math/tex; mode=display">f(x) = \int^10_0\sin(x)dx</script>
 
-<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。</p>
+<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。另外，如果翻墙，公式加载也非常慢，直接访问网站会快很多。</p>
 
 <pre><code class="language-Javascript">&lt;!-- mathjax config similar to math.stackexchange --&gt;
 &lt;script type="text/x-mathjax-config"&gt;
@@ -173,7 +174,7 @@ class g(nn.Module):
       </span>
       <span class="plus">
         
-          <a href="#disqus_thread" onclick="return false;" data-disqus-identifier="http://ycangus2415.github.io/blog/20170617/using-octopress-to-build-a-blog/">+</a>
+          <a href="#">+</a>
         
       </span>
     </div>
@@ -195,11 +196,6 @@ class g(nn.Module):
 
 </article>
 
-  <section>
-    <div class="hide" id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
 
     </div>
     <footer role="contentinfo"><div class="content">
@@ -210,30 +206,6 @@ class g(nn.Module):
 
 </footer>
     
-
-<script type="text/javascript">
-  disqus_shortname = 'ycangus';
-  
-    disqus_identifier = 'http://ycangus2415.github.io/blog/20170617/using-octopress-to-build-a-blog/';
-    disqus_url = 'http://ycangus2415.github.io/blog/20170617/using-octopress-to-build-a-blog/';
-    function loadDisqus() {
-      
-      // var disqus_developer = 1;
-      var disqus_script = 'embed.js';
-      (function () {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }());
-    }
-  
-  (function () {
-    var disqus_script = 'count.js';
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  }());
-</script>
 
 
 

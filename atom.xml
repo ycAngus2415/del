@@ -4,7 +4,7 @@
   <title><![CDATA[AI Producer Dreamer]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-18T12:29:02+08:00</updated>
+  <updated>2017-06-18T12:53:41+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[Angus;Yang Chao]]></name>
@@ -18,7 +18,8 @@
     <link href="http://ycangus2415.github.io/blog/20170617/using-octopress-to-build-a-blog/"/>
     <updated>2017-06-17T00:14:56+08:00</updated>
     <id>http://ycangus2415.github.io/blog/20170617/using-octopress-to-build-a-blog</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>这篇文章参考了生命之氢</p>
+
 <h1 id="githubio">新建一个github.io</h1>
 
 <ol>
@@ -42,7 +43,7 @@
 
 <script type="math/tex; mode=display">f(x) = \int^10_0\sin(x)dx</script>
 
-<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。</p>
+<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。另外，如果翻墙，公式加载也非常慢，直接访问网站会快很多。</p>
 
 <pre><code class="language-Javascript">&lt;!-- mathjax config similar to math.stackexchange --&gt;
 &lt;script type="text/x-mathjax-config"&gt;
