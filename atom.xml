@@ -4,7 +4,7 @@
   <title><![CDATA[AI Producer Dreamer]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-18T11:31:01+08:00</updated>
+  <updated>2017-06-18T12:29:02+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[Angus;Yang Chao]]></name>
@@ -38,7 +38,7 @@
 
 <script type="math/tex; mode=display">f(x) = \sin(x)\int_0^1\sum \cos(x)dx</script>
 
-<p>显然是没有用的。$\sin(x)$</p>
+<p>显然是没有用的。<script type="math/tex">\sin(x)</script></p>
 
 <script type="math/tex; mode=display">f(x) = \int^10_0\sin(x)dx</script>
 
