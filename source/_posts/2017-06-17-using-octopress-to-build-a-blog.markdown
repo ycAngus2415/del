@@ -3,7 +3,7 @@ layout: post
 title: "using octopress to build a blog"
 date: 2017-06-17 00:14:56 +0800
 comments: true
-categories: 
+categories: octopress
 ---
 
 这篇文章参考了生命之氢
@@ -31,9 +31,7 @@ categories:
 
 
 $$
-
 f(x) = \sin(x)\int_0^1\sum \cos(x)dx
-
 $$
 
 
@@ -88,3 +86,12 @@ class g(nn.Module):
 确实，好像没有高亮。
 
 原来是主题的原因，不过比较简洁，还是能够接受的，
+
+## 插入图片
+
+插入的图片放在/octopress/source/images/下，在引用的时候
+
+~~~
+![](images/image.img)
+~~~
+
