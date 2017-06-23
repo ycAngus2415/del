@@ -40,7 +40,7 @@ $$
 
 
 
-![figure_1](images/wei-fen-fang-cheng/figure_1.png)
+![figure_1](/Users/yangchao/octopress/_deploy/images/wei-fen-fang-cheng/figure_1.png)
 
 
 
@@ -48,7 +48,7 @@ $$
 
 
 
-![figure_1 2](images/wei-fen-fangcheng/figure_1 2.png)
+![figure_1 2](/Users/yangchao/octopress/_deploy/images/wei-fen-fang-cheng/figure_1 2.png)
 
 
 
